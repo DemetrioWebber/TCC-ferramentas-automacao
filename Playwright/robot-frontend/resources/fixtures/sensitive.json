@@ -1,0 +1,10 @@
+{
+    "valido":{
+        "email":"testano@qa.com.br",
+        "senha":"teste"
+    },
+    "invalido":{
+        "email":"nao.existo@aqui.com.br",
+        "senha":"1senharuim2"
+    }
+}

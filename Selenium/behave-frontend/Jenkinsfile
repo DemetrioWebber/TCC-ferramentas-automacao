@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+    stages {
+        stage("Run tests") {
+            steps {
+                dir('bdd'){
+                    sh 'python --version'
+                    sh 'behave --no-capture --tags "@scenario.sistema" -D SISTEMA=$sistema'
+                }
+            }
+        }
+    }
+}
