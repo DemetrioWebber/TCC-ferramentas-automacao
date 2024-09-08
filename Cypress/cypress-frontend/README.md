@@ -1,11 +1,3 @@
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-<img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />
-![Cypress.io](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)<br>
-
-# Acelerador :: Visual Forest
-Cypress para Front-end arquitetado em _Page Objects_ com _Cucumber_ (BDD)
-<br>
-
 ## Setup do projeto
 Clonar o repositório e executar `npm ci` para instalar as dependências
 
@@ -40,9 +32,6 @@ Clonar o repositório e executar `npm ci` para instalar as dependências
 * `Lembre-se, quem está executando a ação é um robô!`
 * Ou ainda, utilize atores: __Quando o administrador preencher o cadastro__
 
-__Faça download do documento abaixo para acessar todas as boas práticas indicadas para Gherkin__
-[link]
-
 # Guia para desenvolvimento:
 * 0 - Configure seus ambientes nos arquivos _.json_ da pasta `cypress/config`.
 * 0.1 - Lembre-se de revisar os scripts de execução em `package.json` para garantir que 'configFile' envie o nome do seu arquivo
@@ -54,13 +43,6 @@ __Faça download do documento abaixo para acessar todas as boas práticas indica
 * 3.2 - Os elementos das páginas devem ser armazenados em arquivos `*.elements.js` na pasta `pages/components`
 * 3.3 - Lembre-se de reutilizar funções herdando a `_base.page.js`, isso vai acelerar o seu processo de desenvolvimento.
 * 4 - Utilize as boas práticas indicadas pela documentação do Cypress [https://docs.cypress.io/guides/references/best-practices]
-
-__Em caso de dúvidas peça ajuda de um evangelista do iStudio de QA ou colega com experiência__
-
-### Dependências:
-
-  * [**Cypress**](https://www.cypress.io/)
-  * [**Cypress-cucumber-preprocessor**](https://github.com/TheBrainFamily/cypress-cucumber-preprocessor)
   * [**Fs-extra**](https://www.npmjs.com/package/fs-extra)
   * [**Rimraf**](https://www.npmjs.com/package/rimraf)
   * [**Multiple-cucumber-html-reporter**](https://www.npmjs.com/package/multiple-cucumber-html-reporter)
