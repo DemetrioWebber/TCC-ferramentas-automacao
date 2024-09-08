@@ -1,5 +1,3 @@
-Template construído utilizando Robot Framework com a library Browser, fazendo uso de App actions.
-
 Para instalar as dependências:
 ```
 pip install -U pip
