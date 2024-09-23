@@ -18,9 +18,6 @@
 ### Vai rodar todas as tags menos a tag2
 ```behave --tags "not @tag2" caminho_da_feature```
 
-## Executar o cenário que gera Screenshot e envia mensagem para o Telegram:
-```behave --tags "@shot_sample"```
-
 ## Para chamar o Job do Jenkins passando o sistema que deverá ter um usuário registrado, é possível utilizar a API da seguinte forma:
 ```curl <jenkins_url>/job/<nome_job>/buildWithParameters  --user user:key --data sistema=ngin --data verbosity=high```
 
