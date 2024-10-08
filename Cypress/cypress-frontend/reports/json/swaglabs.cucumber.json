@@ -1,0 +1,216 @@
+[
+  {
+    "keyword": "Funcionalidade",
+    "name": "Flow Basico Swag Labs",
+    "line": 4,
+    "id": "flow-basico-swag-labs",
+    "tags": [
+      {
+        "name": "@feature.swag_labs",
+        "line": 3
+      }
+    ],
+    "uri": "swaglabs.feature",
+    "elements": [
+      {
+        "id": "flow-basico-swag-labs;logar-na-aplicação",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Logar na Aplicação",
+        "tags": [
+          {
+            "name": "@feature.swag_labs",
+            "line": 3
+          },
+          {
+            "name": "@scenario.login",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que esteja na pagina de login",
+            "result": {
+              "status": "passed",
+              "duration": 126000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 10,
+            "name": "digitar o username \"standard_user\" e senha \"secret_sauce\"",
+            "result": {
+              "status": "passed",
+              "duration": 556000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 11,
+            "name": "clicar no botao de login",
+            "result": {
+              "status": "passed",
+              "duration": 79000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 12,
+            "name": "devera ser exibida a pagina de produtos da aplicação",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "flow-basico-swag-labs;adicionar-produtos-ao-carrinho",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Adicionar Produtos ao Carrinho",
+        "tags": [
+          {
+            "name": "@feature.swag_labs",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 16,
+            "name": "que esteja na pagina de produtos",
+            "result": {
+              "status": "passed",
+              "duration": 733000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 17,
+            "name": "adicionar produtos ao carrinho",
+            "result": {
+              "status": "passed",
+              "duration": 231000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 18,
+            "name": "clicar no icone do carrinho",
+            "result": {
+              "status": "passed",
+              "duration": 79000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 19,
+            "name": "devera ser exibido o carrinho com os produtos selecionados",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "flow-basico-swag-labs;checkout-de-produtos",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Checkout de Produtos",
+        "tags": [
+          {
+            "name": "@feature.swag_labs",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 23,
+            "name": "que tenha diversos produtos adicionados ao carrinho",
+            "result": {
+              "status": "passed",
+              "duration": 944000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 24,
+            "name": "que esteja na pagina de carrinho com diversos produtos",
+            "result": {
+              "status": "passed",
+              "duration": 82000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 25,
+            "name": "clicar no botao de checkout",
+            "result": {
+              "status": "passed",
+              "duration": 76000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 26,
+            "name": "colocar os dados do comprador",
+            "result": {
+              "status": "passed",
+              "duration": 758000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 27,
+            "name": "devera ver os produtos e o valor na pagina de resumo do pedido",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 28,
+            "name": "clicar no botao para finalizar a compra",
+            "result": {
+              "status": "passed",
+              "duration": 88000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 29,
+            "name": "devera ser exibido um agradecimento pelo pedido",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,5 +1,5 @@
 import Base from './_base.page'
-import {Home, Cart} from './components/sauce.elements'
+import {Home, Cart, Login, Check} from './components/sauce.elements'
 
 const element = require('./components/sauce.elements').element 
 
@@ -9,49 +9,55 @@ export class Sauce extends Base {
       cy.visit('/')
     }
 
-    static logarSauceDemo(user_type){
+    static logarSauceDemo(user_type, password){
       element('username')
         .should('be.visible')
         .type(user_type)
       element('password')
         .should('be.visible')
-        .type('secret_sauce')
-      element('login-button')
-        .should('be.visible')
-        .click()
+        .type(password)
     }
 
-    static filtrarProdutos(filtro){
-      super.waitElementAndSelectOption(Home.SELECT_FILTER, filtro)
-    }
-
-    static verificarProduto(name, price){
-      super.validarPrimeiroElementoDoArray(Home.ARR_PRODUCTS, name)
-      super.validarPrimeiroElementoDoArray(Home.ARR_PRODUCTS, price)
-    }
-
-    static adicionarProdutoCarrinho(prod){
-      switch (prod) {
-        case "Sauce Labs Backpack":
-          element('add-to-cart-sauce-labs-backpack')
-            .should('be.visible')
-            .click()
-          break;
-        default:
-          throw new Error(`Produto ${prod} não encontrado`)
-      }
+    static adicionarProdutosCarrinho(){
+      super.clickOnElement(Home.BTN_ADD_BACKPACK)
+      super.clickOnElement(Home.BTN_ADD_BIKE_LIGHT)
+      super.clickOnElement(Home.BTN_ADD_TSHIRT)
     }
 
     static acessarCarrinho(){
       super.clickOnElement(Cart.BTN_CART)
     }
 
-    static verificarProdutoAdicionado(prod){
-      super.validateElementText(Cart.LBL_CART_ITEM, prod)
+    static clicarLogin(){
+      super.clickOnElement(Login.BTN_LOGIN)
     }
 
-    static validarBadgeCarrinho(qtd){
-      super.validateElementText(Cart.LBL_CART_QTD, qtd)
+    static clicarCheckout(){
+      super.clickOnElement(Cart.BTN_CHECKOUT)
     }
 
+    static clicarFinalizarCompra(){
+      super.clickOnElement(Check.BTN_FINISH)
+    }
+
+    static verificarValorFinal(valor){
+      super.validateElementText(Check.TXT_SUMMARY, valor)
+    }
+
+    static verificarQuantidadeProdutos(){
+      cy.get(Check.ARR_PRODUCTS_RESUME).should('have.length', 3)
+    }
+
+    static colocarDadosComprador(){
+      cy.get(Check.INP_FIRST_NAME)
+        .should('be.visible')
+        .type('Demetrio')
+      cy.get(Check.INP_LAST_NAME)
+        .should('be.visible')
+        .type('Atitus')
+      cy.get(Check.INP_POSTAL_CODE)
+        .should('be.visible')
+        .type('95300000')
+      super.clickOnElement(Check.BTN_CONTINUE)
+    }
 }

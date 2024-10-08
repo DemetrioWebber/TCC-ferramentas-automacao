@@ -7,7 +7,7 @@ Funcionalidade: Flow Basico Swag Labs
     Cenário: Logar na Aplicação
 
         Dado que esteja na pagina de login
-        Quando digitar o username "standard_user" e senha "secret_sauce"
+        Quando digitar o username "e" e senha "secret_sauce"
         E clicar no botao de login
         Então devera ser exibida a pagina de produtos da aplicação
 

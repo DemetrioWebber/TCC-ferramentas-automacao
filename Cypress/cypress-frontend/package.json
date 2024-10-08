@@ -13,7 +13,7 @@
     "cy:clear": "node ./cypress/support/clear.js"
   },
   "keywords": [],
-  "author": "Leonardo Kartabil",
+  "author": "Demetrio Webber",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^10.1.0",

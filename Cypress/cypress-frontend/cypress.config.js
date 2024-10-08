@@ -54,6 +54,7 @@ module.exports = defineConfig({
       return getConfigurationByFile(file)
     },
     excludeSpecPattern: '*.js',
+    testIsolation: true,
     specPattern: 'cypress/e2e/**/*.{feature, features}',
   },
 })
